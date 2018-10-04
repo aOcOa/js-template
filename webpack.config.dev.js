@@ -6,7 +6,7 @@ module.exports = {
   entry: ["babel-polyfill",path.resolve(__dirname, "src/script.js")],
   devtool: "inline-source-map",
   devServer: {
-    contentBase: "./example",
+    contentBase: "./public",
     port: 7080
   },
   output: {
