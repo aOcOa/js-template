@@ -10,13 +10,18 @@
     "chai": "^4.1.2",
     "chai-dom": "nathanboktae/chai-dom#master",
     "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "jsdom": "^11.11.0",
+    "mini-css-extract-plugin": "^0.4.4",
     "mocha": "^5.2.0",
     "mocha-webpack": "2.0.0-beta.0",
     "node-sass": "^4.9.2",
     "null-loader": "^0.1.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "pixi.js": "^4.8.1",
     "postcss-loader": "^2.1.6",
+    "pug-html-loader": "^1.1.5",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.16.0",
@@ -26,7 +31,7 @@
   },
   "scripts": {
     "test": "mocha-webpack  -c -w  --timeout 10000 --webpack-config webpack.config.test.js \"test/**/*.js\"",
-    "start": "webpack-dev-server --open 'Google Chrome' --open  --config webpack.config.dev.js",
+    "start": "webpack-dev-server --open 'Google Chrome' --config webpack.config.dev.js --watch-content-base",
     "build": "webpack --config webpack.config.prod.js"
   }
 }
